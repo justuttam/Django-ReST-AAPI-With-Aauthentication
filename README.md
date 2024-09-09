@@ -1,3 +1,3 @@
-# hello-world
-My first repository
-This is good exercise.
+# ReST APIs with authentication for managing items in an inventory using Django REST Framework and SQlite
+This repository contains ReST apis for adding, updating, fetching and deleting the items in an inventory. Users can fetch the items without logging-in to the system. For adding, updating and deleting the items user must authenticate. User authentication is build using Token-Based Authentication. User must provide username and password when authenticating for the first time. A token would be generated that can be used in the subsequent requests for authentication.
+If user forgets his/her token then by providing username and password they can request the token.
