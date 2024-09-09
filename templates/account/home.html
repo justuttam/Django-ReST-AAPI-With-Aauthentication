@@ -1,0 +1,16 @@
+{% extends 'account/base.html' %}
+
+{% block title %}Success{% endblock %}
+
+{% block content %}
+    <div>
+        <h2 class="text-center mb-2">
+            Hello {{ request.session.username }}!
+            <small class="text-muted">You have been registered successfully.</small>
+        </h2>
+    <h4 class="text-center mb-2">Your authentication token is: {{ request.session.token }}</h4><br>
+    <p class="text-center mb-2">
+        Do not have an account! <a href="{% url 'register' %}">Register</a>Here
+    </p>
+    </div>
+{% endblock %}
